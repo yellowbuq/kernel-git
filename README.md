@@ -1,6 +1,16 @@
 # kernel-git
 
 ## Zadanie do wykonania!
+Na samym początku zforkuj repozytorium do swojego konta na Githubie! Dziękie temu będziesz mieć swoją własną kopię tego repo u siebie.
+Aby to zrobić musisz kliknąć przycisk "Fork" po prawej górnej części ekranu:
+
+![image](https://user-images.githubusercontent.com/5701304/138130291-17e40ddf-b00d-4d1a-85c7-eda738e72057.png)
+
+Gdy to już zrobisz sklonuj repozytorium, aby móc z niego korzystać lokalnie:
+```bash
+git clone https://github.com/<nazwa-twojego-konta-na-githubie>/kernel-git.git
+```
+
 Najpierw rozpoznaj sytuację oraz zobacz na którym branchu się znajdujesz:
 ```bash
 git status
