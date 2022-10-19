@@ -2,6 +2,7 @@
 
 ## Uwaga!
 ### Na początku spróbuj samodzielnie wyszukać w dostępnych źródłach komendy niezbędne do wykonania każdego z kroków. Dopiero gdy wujek Google zawiedzie - rozwiń rozwiązanie ;) 
+### Nie krępuj się i pytaj opiekunów warsztatów o dowolną pomoc i wyjaśnienie. 
 
 ## Część I - Rozpoznanie terenu!
 ### W tej części poznasz podstawowe komendy niezbędne do poruszania się po repozytorium i sprawdzania stanu swojej pracy :) 
