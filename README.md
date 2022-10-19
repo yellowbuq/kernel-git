@@ -140,6 +140,26 @@ Wyjście z trybu przeglądania commitów - literka `q`.
 </details>
 <br><br>
 
+Aby móc "zpushować" swoje zmiany do serwisu GitHub będziesz musiał się z tym serwisem uwierzytelnić. Można tego dokonać na kilka sposobów:
+
+<ol>
+<li><a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">Token dostępu (dawnej logowanie hasłem)</a></li>
+<li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">Kluczem SSH</a></li>
+<li>OAuth (domyślny sposób dla VS Code oraz oprogramowania IntelliJ)</li>
+</ol>
+
+Najbardziej uniwersjalną metodą jest autentykacja z użyciem kluczy SSH. Sposób ten opisałem poniżej.
+
+Najpierw generujemy pare kluczy następującym poleceniem:
+```bash
+    ssh-keygen -t ed25519 -C "twój_email@example.com"
+```
+Po wykonaniu tego polecenia zostaniemy zapytani o to gdzie zpisać ten klucz i o `passphrase`. Polecam nie zmieniać domyślnej lokalizacji klucza, ponieważ może to utrudnić potem gitowi odnalezienie owego klucza. Passphrase to dodakowe hasło które można nałożyć na dany klucz. Dodanie takiego hasła spowoduje iż każdy program próbujący użyć tego klucza zapyta nas najpierw o ustawione hasło. Passphrase jest opcjonalne i nie trzeba go podawać.
+
+W kolejnym kroku kopiujemy zawartość wygenerowanego klucza publiczego z pliku `id_ed25519.pub` (Domyślnie powstałym w ~/.ssh). 
+
+Wchodzimy na Githuba, klikamy w prawy górny róg na ikone profilu i wybieramy settings. W zakładce `SSH and GPG keys` klikamy `Add new` i wklejamy skopiowany klucz.
+
 JUŻ CZAS! 
 Umieść swoje lokalne zmiany w repozytorium w serwisie GitHub! Ponownie sprawdź swoje postępy pracy uprzednio poznanymi komendami, a następnie "wypchnij" zmiany do repo:
 <details><summary>Rozwiązanie</summary>
